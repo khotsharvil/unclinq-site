@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
@@ -14,15 +14,15 @@
     }
   })();
 </script>
-<!-- â”€â”€ Cookie/tracking consent gate (loads before any tracking) â”€â”€ -->
+<!-- ── Cookie/tracking consent gate (loads before any tracking) ── -->
 <script src="consent.js"></script>
-<!-- â”€â”€ Analytics: PostHog (loads ONLY after the user accepts cookies) â”€â”€ -->
+<!-- ── Analytics: PostHog (loads ONLY after the user accepts cookies) ── -->
 <script>
   window.UNCLINQ_POSTHOG_KEY = 'phc_vGorCMbgKXLuLPumzxZUr5GD9fpxKzUvj6TBKJeAVpx6';
   window.UNCLINQ_POSTHOG_HOST = 'https://us.i.posthog.com';
   window.unclinqOnConsent(function () {
     var key = window.UNCLINQ_POSTHOG_KEY;
-    if (!key || key.indexOf('phc_') !== 0) return; // not configured yet â†’ stay a no-op
+    if (!key || key.indexOf('phc_') !== 0) return; // not configured yet → stay a no-op
     !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug getPageViewId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window);
     posthog.init(key, {
       api_host: window.UNCLINQ_POSTHOG_HOST,
@@ -34,7 +34,7 @@
     });
   });
 </script>
-<!-- â”€â”€ Meta Pixel (loads ONLY after the user accepts cookies) â”€â”€ -->
+<!-- ── Meta Pixel (loads ONLY after the user accepts cookies) ── -->
 <script>
   window.META_PIXEL_ID = '875689661804139';
   window.unclinqOnConsent(function(){
@@ -48,8 +48,8 @@
     fbq('track', 'PageView');
   });
 </script>
-<title>Unclinq â€” The intelligence layer between therapy sessions</title>
-<meta name="description" content="Unclinq is building the intelligence layer between therapy sessions â€” helping therapists understand what happens between sessions, track the therapy journey, and support clients with AI-assisted continuity of care. Join the therapist pilot." />
+<title>Unclinq — The intelligence layer between therapy sessions</title>
+<meta name="description" content="Unclinq is building the intelligence layer between therapy sessions — helping therapists understand what happens between sessions, track the therapy journey, and support clients with AI-assisted continuity of care. Join the therapist pilot." />
 <link rel="canonical" href="https://unclinq.com/" />
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 <meta name="theme-color" content="#F8F1E7" />
@@ -58,17 +58,17 @@
 <link rel="apple-touch-icon" href="icon-192.png" />
 
 <meta property="og:site_name" content="Unclinq" />
-<meta property="og:title" content="Unclinq â€” The intelligence layer between therapy sessions" />
+<meta property="og:title" content="Unclinq — The intelligence layer between therapy sessions" />
 <meta property="og:description" content="Helping therapists understand what happens between sessions, track the therapy journey, and support clients with AI-assisted continuity of care. Built for therapists. Designed around the client journey." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://unclinq.com/" />
 <meta property="og:image" content="https://unclinq.com/og-image.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content="Unclinq Â· The intelligence layer between therapy sessions." />
+<meta property="og:image:alt" content="Unclinq · The intelligence layer between therapy sessions." />
 <meta property="og:locale" content="en_US" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Unclinq â€” The intelligence layer between therapy sessions" />
+<meta name="twitter:title" content="Unclinq — The intelligence layer between therapy sessions" />
 <meta name="twitter:description" content="AI-assisted continuity of care between therapy sessions. Built for therapists." />
 <meta name="twitter:image" content="https://unclinq.com/og-image.png" />
 
@@ -114,10 +114,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Kameron:wght@400;500;600;700&family=Questrial&display=swap" rel="stylesheet" />
 
 <style>
-  /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-     Unclinq â€” B2B2C. Warm editorial, clinical calm.
+  /* ─────────────────────────────────────────────────────────────
+     Unclinq — B2B2C. Warm editorial, clinical calm.
      Washi paper, terracotta ink. Built for therapists.
-     â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+     ───────────────────────────────────────────────────────────── */
   :root {
     --paper:        #F8F1E7;
     --paper-deep:   #F0EAD6;
@@ -179,7 +179,7 @@
     z-index: 200; transition: width 0.1s linear;
   }
 
-  /* â”€â”€ type â”€â”€ */
+  /* ── type ── */
   .label {
     font-family: var(--sans); font-size: 0.6875rem; font-weight: 700;
     letter-spacing: 0.18em; text-transform: uppercase; color: var(--terra);
@@ -206,7 +206,7 @@
     html { scroll-behavior: auto; }
   }
 
-  /* â”€â”€ buttons â”€â”€ */
+  /* ── buttons ── */
   .btn {
     display: inline-flex; align-items: center; gap: 10px;
     font-family: var(--sans); font-weight: 700; font-size: 0.9375rem;
@@ -225,7 +225,7 @@
   .btn-light .arrow { color: var(--terra); transition: transform 0.25s var(--ease-out); }
   .btn-light:hover .arrow { transform: translateX(4px); }
 
-  /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ nav â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+  /* ─────────── nav ─────────── */
   nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
     transition: background 0.3s, box-shadow 0.3s, backdrop-filter 0.3s;
@@ -248,7 +248,7 @@
   .nav-cta { padding: 10px 20px !important; font-size: 0.875rem !important; }
   @media (max-width: 900px) { .nav-links a.nav-hide { display: none; } }
 
-  /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ hero â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+  /* ─────────── hero ─────────── */
   .hero { position: relative; padding: 168px 0 96px; overflow: hidden; }
   .hero-glow {
     position: absolute; top: -180px; right: -160px; width: 640px; height: 640px; border-radius: 50%;
@@ -272,7 +272,7 @@
   .hero-ctas { margin-top: 38px; display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
   .hero-note { margin-top: 26px; font-family: var(--serif); font-style: italic; color: var(--lichen); font-size: 1.0625rem; }
 
-  /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ generic section heads â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+  /* ─────────── generic section heads ─────────── */
   .sec { padding: 110px 0; }
   .sec-deep { background: var(--paper-deep); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
   .sec-head { max-width: 680px; margin-bottom: 60px; }
@@ -282,7 +282,7 @@
   .sec-head p { color: var(--umber); font-size: 1.0938rem; }
   .sec-coda { margin-top: 48px; font-family: var(--serif); font-style: italic; font-size: clamp(1.25rem, 2.6vw, 1.625rem); color: var(--terra); }
 
-  /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ problem cards â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+  /* ─────────── problem cards ─────────── */
   .cards-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
   @media (max-width: 820px) { .cards-3 { grid-template-columns: 1fr; } }
   .pcard {
@@ -295,7 +295,7 @@
   .pcard h3 { font-size: 1.25rem; line-height: 1.3; margin-bottom: 10px; }
   .pcard p { color: var(--umber); font-size: 0.9688rem; line-height: 1.6; }
 
-  /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ flow diagram â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+  /* ─────────── flow diagram ─────────── */
   .flow { position: relative; max-width: 560px; margin: 0 auto; }
   .flow-line { position: absolute; left: 27px; top: 24px; bottom: 24px; width: 1.5px; background: var(--border-strong); opacity: 0.55; }
   .flow-fill { position: absolute; left: 27px; top: 24px; width: 1.5px; height: 0; background: linear-gradient(180deg, var(--terra), var(--moss)); transition: height 0.2s linear; }
@@ -314,7 +314,7 @@
   .flow-body p { color: var(--umber); font-size: 0.9375rem; margin-top: 2px; }
   .flow-under { margin-top: 40px; text-align: center; font-family: var(--serif); font-style: italic; color: var(--lichen); font-size: 0.9688rem; }
 
-  /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ numbered workflow (04 cards) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+  /* ─────────── numbered workflow (04 cards) ─────────── */
   .steps-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
   @media (max-width: 900px) { .steps-4 { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 560px) { .steps-4 { grid-template-columns: 1fr; } }
@@ -324,7 +324,7 @@
   .scard h3 { font-size: 1.125rem; margin-bottom: 8px; }
   .scard p { color: var(--umber); font-size: 0.9063rem; line-height: 1.6; }
 
-  /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ dashboard mockup â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+  /* ─────────── dashboard mockup ─────────── */
   .mock-wrap { max-width: 820px; margin: 56px auto 0; }
   .mock {
     background: var(--card); border: 1px solid var(--border-strong); border-radius: 22px; overflow: hidden;
@@ -357,7 +357,7 @@
   .mock-span { grid-column: 1 / -1; }
   .mock-fine { margin-top: 22px; text-align: center; font-size: 0.8125rem; color: var(--lichen); }
 
-  /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ layers (three intelligences) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+  /* ─────────── layers (three intelligences) ─────────── */
   .layers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
   @media (max-width: 880px) { .layers { grid-template-columns: 1fr; } }
   .layer { background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 32px 28px; position: relative; overflow: hidden; }
@@ -367,11 +367,11 @@
   .layer h3 { font-size: 1.1875rem; margin: 6px 0 16px; }
   .layer ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
   .layer li { position: relative; padding-left: 20px; font-size: 0.9375rem; color: var(--umber); line-height: 1.5; }
-  .layer li::before { content: "â€”"; position: absolute; left: 0; color: var(--terra); }
+  .layer li::before { content: "—"; position: absolute; left: 0; color: var(--terra); }
   .layer.calm li::before { color: var(--calm); }
   .layer.moss li::before { color: var(--moss); }
 
-  /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ dark manifesto (privacy + AI) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+  /* ─────────── dark manifesto (privacy + AI) ─────────── */
   .dark { background: var(--ink); color: #EFEAE0; position: relative; overflow: hidden; }
   .dark::after { content: ""; position: absolute; top: -200px; right: -150px; width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, rgba(212,140,112,0.12), transparent 65%); pointer-events: none; }
   .dark::before { content: ""; position: absolute; bottom: -240px; left: -160px; width: 560px; height: 560px; border-radius: 50%; background: radial-gradient(circle, rgba(107,111,180,0.12), transparent 65%); pointer-events: none; }
@@ -389,12 +389,12 @@
   .dark-split p { color: rgba(239,234,224,0.68); font-size: 0.9688rem; line-height: 1.7; }
   .dark-split p strong { color: #EFEAE0; }
 
-  /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ client side â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+  /* ─────────── client side ─────────── */
   .client-line { margin-top: 52px; text-align: center; }
   .client-line .badge { display: inline-flex; align-items: center; gap: 10px; font-family: var(--serif); font-style: italic; font-size: clamp(1.25rem, 2.8vw, 1.625rem); color: var(--terra); }
   .client-line .badge::before, .client-line .badge::after { content: ""; width: 30px; height: 1.5px; background: var(--border-strong); }
 
-  /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ validation â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+  /* ─────────── validation ─────────── */
   .val-grid { display: grid; grid-template-columns: 0.7fr 1.3fr; gap: 48px; align-items: center; }
   @media (max-width: 820px) { .val-grid { grid-template-columns: 1fr; gap: 36px; } }
   .val-stat { text-align: center; background: var(--card); border: 1px solid var(--border); border-radius: 22px; padding: 44px 28px; box-shadow: 0 10px 32px rgba(74,55,40,0.07); }
@@ -405,7 +405,7 @@
   .insight p { font-family: var(--serif); font-style: italic; font-size: 1.125rem; color: var(--ink); line-height: 1.5; }
   .val-note { margin-top: 28px; font-size: 0.8438rem; color: var(--lichen); max-width: 620px; }
 
-  /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ who is it for â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+  /* ─────────── who is it for ─────────── */
   .who { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
   @media (max-width: 820px) { .who { grid-template-columns: 1fr; } }
   .who-card { padding: 30px 26px; border-radius: 18px; background: var(--card); border: 1px solid var(--border); }
@@ -413,7 +413,7 @@
   .who-card h3 { font-size: 1.25rem; margin-bottom: 8px; }
   .who-card p { color: var(--umber); font-size: 0.9375rem; line-height: 1.6; }
 
-  /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ stage / final CTA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+  /* ─────────── stage / final CTA ─────────── */
   .stage-card { max-width: 760px; margin: 0 auto; text-align: center; background: var(--card); border: 1px solid var(--border); border-radius: 24px; padding: 56px 48px; box-shadow: 0 20px 56px rgba(74,55,40,0.09); }
   @media (max-width: 600px) { .stage-card { padding: 40px 26px; } }
   .stage-card h2 { font-size: clamp(1.75rem, 3.6vw, 2.375rem); margin-bottom: 18px; }
@@ -427,7 +427,7 @@
   .final-ctas { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
   .final-fine { margin-top: 26px; font-size: 0.8125rem; color: var(--lichen); }
 
-  /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ about + credibility â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+  /* ─────────── about + credibility ─────────── */
   .about { max-width: 760px; margin: 0 auto; text-align: center; }
   .about h2 { font-size: clamp(1.625rem, 3.4vw, 2.125rem); margin-bottom: 18px; }
   .about p { color: var(--umber); margin-bottom: 16px; }
@@ -444,7 +444,7 @@
   .cred-logo img { display: block; width: auto; height: 56px; }
   @media (max-width: 480px) { .cred-logo img { height: 46px; } }
 
-  /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ footer â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+  /* ─────────── footer ─────────── */
   footer { padding: 52px 0 64px; border-top: 1px solid var(--border); background: var(--paper); }
   .foot-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; }
   .foot-left { display: flex; flex-direction: column; gap: 6px; }
@@ -454,7 +454,7 @@
   .foot-links a:hover { color: var(--terra); }
   .foot-legal { width: 100%; margin-top: 26px; font-size: 0.75rem; color: var(--lichen); line-height: 1.6; max-width: 680px; }
 
-  /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ real product: demo video + screenshots â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+  /* ─────────── real product: demo video + screenshots ─────────── */
   .demo-wrap { max-width: 940px; margin: 0 auto; }
   .browser { background: var(--card); border: 1px solid var(--border-strong); border-radius: 18px; overflow: hidden; box-shadow: 0 2px 8px rgba(44,55,40,0.06), 0 30px 72px rgba(74,55,40,0.16); }
   .browser-bar { display: flex; align-items: center; gap: 8px; padding: 12px 18px; background: var(--paper-deep); border-bottom: 1px solid var(--border); }
@@ -479,7 +479,7 @@
 
 <div id="thread" aria-hidden="true"></div>
 
-<!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ nav â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<!-- ───────────── nav ───────────── -->
 <nav id="nav">
   <div class="nav-inner">
     <a class="wordmark" href="#top"><img class="wordmark-logo" src="logo.png" alt="" />UNCLINQ</a>
@@ -489,18 +489,18 @@
       <a class="nav-hide" href="#therapists">For therapists</a>
       <a class="nav-hide" href="#privacy">Privacy</a>
       <a class="nav-hide" href="#about">About</a>
-      <a class="btn btn-ink nav-cta" href="mailto:khotsharvil10@gmail.com?subject=Therapist%20Pilot%20%E2%80%94%20Unclinq&amp;body=Hi%20Unclinq%20team%2C%0A%0AI%27m%20a%20therapist%20interested%20in%20the%20pilot.%0A%0AName%3A%0APractice%2Fclinic%3A%0ALocation%3A%0A%0AThanks%2C">Join Pilot <span class="arrow">â†’</span></a>
+      <a class="btn btn-ink nav-cta" href="mailto:khotsharvil10@gmail.com?subject=Therapist%20Pilot%20%E2%80%94%20Unclinq&amp;body=Hi%20Unclinq%20team%2C%0A%0AI%27m%20a%20therapist%20interested%20in%20the%20pilot.%0A%0AName%3A%0APractice%2Fclinic%3A%0ALocation%3A%0A%0AThanks%2C">Join Pilot <span class="arrow">→</span></a>
     </div>
   </div>
 </nav>
 
-<!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ hero â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<!-- ───────────── hero ───────────── -->
 <header class="hero" id="top">
   <div class="hero-glow"  id="glow1"></div>
   <div class="hero-glow-2" id="glow2"></div>
   <div class="wrap">
     <img class="hero-logo rv" src="logo.png" alt="Unclinq" />
-    <p class="label rv">Continuity of care Â· Built for therapists</p>
+    <p class="label rv">Continuity of care · Built for therapists</p>
     <h1 class="rv" style="margin-top:22px">
       The intelligence layer<br />
       <span class="terra">between therapy sessions.</span>
@@ -509,27 +509,27 @@
       Unclinq helps therapists understand what happens <strong>between sessions</strong>, track the therapy journey, and support clients with AI-assisted continuity of care.
     </p>
     <div class="hero-ctas rv rv-d2">
-      <a class="btn btn-ink" href="mailto:khotsharvil10@gmail.com?subject=Therapist%20Pilot%20%E2%80%94%20Unclinq&amp;body=Hi%20Unclinq%20team%2C%0A%0AI%27m%20a%20therapist%20interested%20in%20the%20pilot.%0A%0AName%3A%0APractice%2Fclinic%3A%0ALocation%3A%0A%0AThanks%2C">Join the Therapist Pilot <span class="arrow">â†’</span></a>
-      <a class="btn btn-quiet" href="#how">Watch the 90-sec demo â†“</a>
+      <a class="btn btn-ink" href="mailto:khotsharvil10@gmail.com?subject=Therapist%20Pilot%20%E2%80%94%20Unclinq&amp;body=Hi%20Unclinq%20team%2C%0A%0AI%27m%20a%20therapist%20interested%20in%20the%20pilot.%0A%0AName%3A%0APractice%2Fclinic%3A%0ALocation%3A%0A%0AThanks%2C">Join the Therapist Pilot <span class="arrow">→</span></a>
+      <a class="btn btn-quiet" href="#how">Watch the 90-sec demo ↓</a>
     </div>
     <p class="hero-note rv rv-d3">Built for therapists. Designed around the client journey.</p>
   </div>
 </header>
 
-<!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ problem â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<!-- ───────────── problem ───────────── -->
 <section class="sec" id="problem">
   <div class="wrap ghosted">
     <span class="ghost-num" aria-hidden="true">01</span>
     <div class="sec-head">
       <span class="label rv">The gap</span>
       <h2 class="rv">Therapy doesn't stop when the session ends.</h2>
-      <p class="rv rv-d1">A therapist may see a client for 45â€“60 minutes a week. But most of the client's emotional experiences, triggers, reflections, and attempts to apply therapeutic techniques happen <em>between</em> sessions.</p>
+      <p class="rv rv-d1">A therapist may see a client for 45–60 minutes a week. But most of the client's emotional experiences, triggers, reflections, and attempts to apply therapeutic techniques happen <em>between</em> sessions.</p>
     </div>
     <div class="cards-3">
       <div class="pcard rv">
         <span class="pk">During the week</span>
         <h3>Life happens outside the room</h3>
-        <p>Triggers, emotions, reflections and challenges happen where the therapist isn't â€” in the middle of an ordinary Tuesday.</p>
+        <p>Triggers, emotions, reflections and challenges happen where the therapist isn't — in the middle of an ordinary Tuesday.</p>
       </div>
       <div class="pcard rv rv-d1">
         <span class="pk">Between sessions</span>
@@ -539,21 +539,21 @@
       <div class="pcard rv rv-d2">
         <span class="pk">Before the next session</span>
         <h3>A blurry starting point</h3>
-        <p>Therapists need a concise, honest picture of what mattered â€” not fifteen minutes of catching up before the work can begin.</p>
+        <p>Therapists need a concise, honest picture of what mattered — not fifteen minutes of catching up before the work can begin.</p>
       </div>
     </div>
     <p class="sec-coda rv">Unclinq connects these missing pieces.</p>
   </div>
 </section>
 
-<!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ product workflow (flow diagram) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<!-- ───────────── product workflow (flow diagram) ───────────── -->
 <section class="sec sec-deep" id="product">
   <div class="wrap ghosted">
     <span class="ghost-num" aria-hidden="true">02</span>
     <div class="sec-head center">
       <span class="label rv">The product</span>
       <h2 class="rv">From session to session, Unclinq keeps the context alive.</h2>
-      <p class="rv rv-d1">Session transcript â†’ between-session activity â†’ AI analysis â†’ therapist briefing â†’ therapy journey. One continuous thread instead of a weekly reset.</p>
+      <p class="rv rv-d1">Session transcript → between-session activity → AI analysis → therapist briefing → therapy journey. One continuous thread instead of a weekly reset.</p>
     </div>
 
     <div class="flow rv rv-d2" id="flow">
@@ -565,7 +565,7 @@
         <div class="flow-body">
           <span class="fl-label">Input</span>
           <h3>Therapy session</h3>
-          <p>The session generates structured context â€” key themes and moments.</p>
+          <p>The session generates structured context — key themes and moments.</p>
         </div>
       </div>
       <div class="flow-node">
@@ -597,7 +597,7 @@
         <div class="flow-body">
           <span class="fl-label">Continuity</span>
           <h3>A better-informed next session</h3>
-          <p>The therapist starts where the client actually is â€” and it compounds over time.</p>
+          <p>The therapist starts where the client actually is — and it compounds over time.</p>
         </div>
       </div>
     </div>
@@ -605,7 +605,7 @@
   </div>
 </section>
 
-<!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ therapist workflow â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<!-- ───────────── therapist workflow ───────────── -->
 <section class="sec" id="therapists">
   <div class="wrap ghosted">
     <span class="ghost-num" aria-hidden="true">03</span>
@@ -623,7 +623,7 @@
       <div class="scard rv rv-d1">
         <span class="sn">02</span>
         <h3>Track</h3>
-        <p>See what happened between sessions â€” triggers, reflections, patterns and how techniques were applied.</p>
+        <p>See what happened between sessions — triggers, reflections, patterns and how techniques were applied.</p>
       </div>
       <div class="scard rv rv-d2">
         <span class="sn">03</span>
@@ -639,13 +639,13 @@
   </div>
 </section>
 
-<!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ see it in action (real demo + screenshots) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<!-- ───────────── see it in action (real demo + screenshots) ───────────── -->
 <section class="sec sec-deep" id="how">
   <div class="wrap">
     <div class="sec-head center">
       <span class="label rv">See it in action</span>
       <h2 class="rv">The whole loop, in ninety seconds.</h2>
-      <p class="rv rv-d1">A real walkthrough of the working product â€” the client's week between sessions, and the therapist's pre-session briefing and therapy journey.</p>
+      <p class="rv rv-d1">A real walkthrough of the working product — the client's week between sessions, and the therapist's pre-session briefing and therapy journey.</p>
     </div>
 
     <div class="demo-wrap rv rv-d2">
@@ -658,7 +658,7 @@
         <div class="demo-video">
           <video src="media/unclinq-demo.mp4" poster="media/shot-dashboard-briefing.png"
                  controls autoplay muted loop playsinline preload="metadata"
-                 aria-label="Unclinq product demo â€” the continuity-of-care loop between therapy sessions"></video>
+                 aria-label="Unclinq product demo — the continuity-of-care loop between therapy sessions"></video>
         </div>
       </div>
     </div>
@@ -667,15 +667,15 @@
       <div class="shot-pair">
         <div>
           <div class="browser">
-            <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span class="u">therapist Â· briefing</span></div>
-            <img src="media/shot-dashboard-briefing.png" alt="Unclinq therapist dashboard â€” the pre-session briefing for a client: what changed this week, what they want to discuss, and what's worth exploring." loading="lazy" />
+            <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span class="u">therapist · briefing</span></div>
+            <img src="media/shot-dashboard-briefing.png" alt="Unclinq therapist dashboard — the pre-session briefing for a client: what changed this week, what they want to discuss, and what's worth exploring." loading="lazy" />
           </div>
           <p class="shot-cap"><b>Before the session.</b> A concise briefing, ready automatically.</p>
         </div>
         <div>
           <div class="browser">
-            <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span class="u">therapist Â· journey</span></div>
-            <img src="media/shot-dashboard-journey.png" alt="Unclinq therapist dashboard â€” the client's therapy journey, week by week, showing how things are changing over time." loading="lazy" />
+            <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span class="u">therapist · journey</span></div>
+            <img src="media/shot-dashboard-journey.png" alt="Unclinq therapist dashboard — the client's therapy journey, week by week, showing how things are changing over time." loading="lazy" />
           </div>
           <p class="shot-cap"><b>Over time.</b> The therapy journey, week by week.</p>
         </div>
@@ -684,14 +684,14 @@
   </div>
 </section>
 
-<!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ more than transcription (layers) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<!-- ───────────── more than transcription (layers) ───────────── -->
 <section class="sec" id="intelligence">
   <div class="wrap ghosted">
     <span class="ghost-num" aria-hidden="true">04</span>
     <div class="sec-head">
       <span class="label rv">The vision</span>
       <h2 class="rv">More than a session transcript.</h2>
-      <p class="rv rv-d1">A transcript tells you what was <em>said</em> in a session. Unclinq aims to help therapists understand the <em>journey</em> between sessions â€” across three layers.</p>
+      <p class="rv rv-d1">A transcript tells you what was <em>said</em> in a session. Unclinq aims to help therapists understand the <em>journey</em> between sessions — across three layers.</p>
     </div>
     <div class="layers">
       <div class="layer rv">
@@ -729,14 +729,14 @@
   </div>
 </section>
 
-<!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ client side â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<!-- ───────────── client side ───────────── -->
 <section class="sec sec-deep" id="clients">
   <div class="wrap ghosted">
     <span class="ghost-num" aria-hidden="true">05</span>
     <div class="sec-head">
       <span class="label rv">For clients</span>
       <h2 class="rv">The client stays connected between sessions.</h2>
-      <p class="rv rv-d1">The same continuity, felt from the client's side â€” a calm, private way to stay in the work through the week.</p>
+      <p class="rv rv-d1">The same continuity, felt from the client's side — a calm, private way to stay in the work through the week.</p>
     </div>
     <div class="steps-4">
       <div class="scard rv">
@@ -762,11 +762,11 @@
     </div>
     <div class="phones rv rv-d1">
       <div class="phone">
-        <div class="phone-frame"><img src="media/shot-client-journey.png" alt="Unclinq client app â€” the client's own therapy journey in warm, plain language, from where they started to where they are now." loading="lazy" /></div>
+        <div class="phone-frame"><img src="media/shot-client-journey.png" alt="Unclinq client app — the client's own therapy journey in warm, plain language, from where they started to where they are now." loading="lazy" /></div>
         <p class="shot-cap"><b>Your journey.</b> In your own words.</p>
       </div>
       <div class="phone">
-        <div class="phone-frame"><img src="media/shot-client-emora.png" alt="Unclinq client app â€” a calm, private space to reflect between sessions." loading="lazy" /></div>
+        <div class="phone-frame"><img src="media/shot-client-emora.png" alt="Unclinq client app — a calm, private space to reflect between sessions." loading="lazy" /></div>
         <p class="shot-cap"><b>A calm space.</b> To reflect between sessions.</p>
       </div>
     </div>
@@ -777,14 +777,14 @@
   </div>
 </section>
 
-<!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ validation â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<!-- ───────────── validation ───────────── -->
 <section class="sec" id="validation">
   <div class="wrap ghosted">
     <span class="ghost-num" aria-hidden="true">06</span>
     <div class="sec-head">
       <span class="label rv">Built by listening</span>
       <h2 class="rv">Built by listening to therapists.</h2>
-      <p class="rv rv-d1">We spoke with therapists to understand what happens between sessions â€” and found a recurring gap in how client experiences are captured, remembered and brought into the next session.</p>
+      <p class="rv rv-d1">We spoke with therapists to understand what happens between sessions — and found a recurring gap in how client experiences are captured, remembered and brought into the next session.</p>
     </div>
     <div class="val-grid">
       <div class="val-stat rv">
@@ -801,7 +801,7 @@
   </div>
 </section>
 
-<!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ privacy + AI manifesto (dark) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<!-- ───────────── privacy + AI manifesto (dark) ───────────── -->
 <section class="sec dark" id="privacy">
   <div class="wrap ghosted">
     <span class="ghost-num" aria-hidden="true">07</span>
@@ -809,20 +809,20 @@
     <h2 class="rv">Privacy-first by design.</h2>
     <p class="lede rv rv-d1">Mental health conversations are deeply personal. Unclinq is being designed with privacy, security and responsible AI use at the core of the product.</p>
     <div class="priv-grid rv rv-d2">
-      <div class="priv-item"><span class="tick">âœ“</span><span>Secure data handling</span></div>
-      <div class="priv-item"><span class="tick">âœ“</span><span>Controlled access</span></div>
-      <div class="priv-item"><span class="tick">âœ“</span><span>Therapist-controlled information sharing</span></div>
-      <div class="priv-item"><span class="tick">âœ“</span><span>Responsible AI use</span></div>
+      <div class="priv-item"><span class="tick">✓</span><span>Secure data handling</span></div>
+      <div class="priv-item"><span class="tick">✓</span><span>Controlled access</span></div>
+      <div class="priv-item"><span class="tick">✓</span><span>Therapist-controlled information sharing</span></div>
+      <div class="priv-item"><span class="tick">✓</span><span>Responsible AI use</span></div>
     </div>
 
     <div class="dark-split rv">
       <h3>AI assists. Therapists decide.</h3>
-      <p>Unclinq is designed to reduce information gaps and administrative burden â€” <strong>not to replace clinical judgment or the therapistâ€“client relationship.</strong> Every insight is a starting point for the therapist, never a verdict.</p>
+      <p>Unclinq is designed to reduce information gaps and administrative burden — <strong>not to replace clinical judgment or the therapist–client relationship.</strong> Every insight is a starting point for the therapist, never a verdict.</p>
     </div>
   </div>
 </section>
 
-<!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ who is it for â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<!-- ───────────── who is it for ───────────── -->
 <section class="sec" id="who">
   <div class="wrap ghosted">
     <span class="ghost-num" aria-hidden="true">08</span>
@@ -850,33 +850,33 @@
   </div>
 </section>
 
-<!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ current stage â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<!-- ───────────── current stage ───────────── -->
 <section class="sec sec-deep" id="stage">
   <div class="wrap">
     <div class="stage-card rv">
       <span class="label" style="display:block;margin-bottom:16px;">Where we are</span>
       <h2>We're building with therapists.</h2>
       <p>Unclinq is currently working with therapists to validate and refine the workflow for AI-assisted continuity of care. We're inviting a small group of early partners to shape what we build next.</p>
-      <a class="btn btn-ink" href="mailto:khotsharvil10@gmail.com?subject=Early%20Therapist%20Partner%20%E2%80%94%20Unclinq&amp;body=Hi%20Unclinq%20team%2C%0A%0AI%27d%20like%20to%20become%20an%20early%20therapist%20partner.%0A%0AName%3A%0APractice%2Fclinic%3A%0ALocation%3A%0A%0AThanks%2C">Become an early therapist partner <span class="arrow">â†’</span></a>
+      <a class="btn btn-ink" href="mailto:khotsharvil10@gmail.com?subject=Early%20Therapist%20Partner%20%E2%80%94%20Unclinq&amp;body=Hi%20Unclinq%20team%2C%0A%0AI%27d%20like%20to%20become%20an%20early%20therapist%20partner.%0A%0AName%3A%0APractice%2Fclinic%3A%0ALocation%3A%0A%0AThanks%2C">Become an early therapist partner <span class="arrow">→</span></a>
     </div>
   </div>
 </section>
 
-<!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ final CTA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<!-- ───────────── final CTA ───────────── -->
 <section class="final" id="get-started">
   <div class="wrap">
     <img class="final-logo rv" src="logo.png" alt="Unclinq" loading="lazy" />
     <h2 class="rv">Help us keep the context alive <span class="terra">between sessions.</span></h2>
     <p class="rv rv-d1">Join the therapist pilot, or reach out to see the product and where it's headed.</p>
     <div class="final-ctas rv rv-d2">
-      <a class="btn btn-ink" href="mailto:khotsharvil10@gmail.com?subject=Therapist%20Pilot%20%E2%80%94%20Unclinq&amp;body=Hi%20Unclinq%20team%2C%0A%0AI%27m%20a%20therapist%20interested%20in%20the%20pilot.%0A%0AName%3A%0APractice%2Fclinic%3A%0ALocation%3A%0A%0AThanks%2C">Join the Therapist Pilot <span class="arrow">â†’</span></a>
+      <a class="btn btn-ink" href="mailto:khotsharvil10@gmail.com?subject=Therapist%20Pilot%20%E2%80%94%20Unclinq&amp;body=Hi%20Unclinq%20team%2C%0A%0AI%27m%20a%20therapist%20interested%20in%20the%20pilot.%0A%0AName%3A%0APractice%2Fclinic%3A%0ALocation%3A%0A%0AThanks%2C">Join the Therapist Pilot <span class="arrow">→</span></a>
       <a class="btn btn-quiet" href="mailto:khotsharvil10@gmail.com?subject=Talk%20to%20Unclinq&amp;body=Hi%20Unclinq%20team%2C%0A%0AI%27d%20like%20to%20talk%20about%20Unclinq.%0A%0A">Talk to us</a>
     </div>
     <p class="final-fine rv rv-d3">Built for therapists. Designed around the client journey.</p>
   </div>
 </section>
 
-<!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ about + credibility â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<!-- ───────────── about + credibility ───────────── -->
 <section class="sec" id="about">
   <div class="wrap">
     <div class="about rv">
@@ -887,15 +887,15 @@
       <div class="cred">
         <span class="ck">Built with support from</span>
         <div class="cred-names">
-          <span class="cred-logo"><img src="kitirf-logo.png" alt="KITIRF â€” KIT Innovation &amp; Research Foundation" width="400" height="200" loading="lazy" /></span>
-          <span>KITIRF â€” KIT Innovation &amp; Research Foundation</span>
+          <span class="cred-logo"><img src="kitirf-logo.png" alt="KITIRF — KIT Innovation &amp; Research Foundation" width="400" height="200" loading="lazy" /></span>
+          <span>KITIRF — KIT Innovation &amp; Research Foundation</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ footer â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<!-- ───────────── footer ───────────── -->
 <footer>
   <div class="wrap foot-inner">
     <div class="foot-left">
@@ -908,17 +908,17 @@
       <a href="#privacy">Privacy</a>
       <a href="mailto:khotsharvil10@gmail.com?subject=Unclinq%20enquiry">Contact</a>
     </div>
-    <p class="foot-legal">Unclinq is a tool to support continuity of care between therapy sessions. It is not a medical device and does not replace professional clinical judgment or the therapistâ€“client relationship. HumanSenti Labs Private Limited. Â© 2026 HumanSenti Labs Private Limited.</p>
+    <p class="foot-legal">Unclinq is a tool to support continuity of care between therapy sessions. It is not a medical device and does not replace professional clinical judgment or the therapist–client relationship. HumanSenti Labs Private Limited. © 2026 HumanSenti Labs Private Limited.</p>
   </div>
 </footer>
 
 <script>
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  // Analytics helper â€” safe no-op until PostHog is configured.
+  // Analytics helper — safe no-op until PostHog is configured.
   const track = (name, props) => { try { if (window.posthog) window.posthog.capture(name, props || {}); } catch (e) {} };
 
-  // â”€â”€ nav background + scroll progress thread â”€â”€
+  // ── nav background + scroll progress thread ──
   const nav = document.getElementById('nav');
   const thread = document.getElementById('thread');
   const onScroll = () => {
@@ -929,7 +929,7 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
-  // â”€â”€ reveal on scroll â”€â”€
+  // ── reveal on scroll ──
   const io = new IntersectionObserver((entries) => {
     for (const e of entries) {
       if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
@@ -937,7 +937,7 @@
   }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
   document.querySelectorAll('.rv').forEach(el => io.observe(el));
 
-  // â”€â”€ hero parallax glows â”€â”€
+  // ── hero parallax glows ──
   const glow1 = document.getElementById('glow1');
   const glow2 = document.getElementById('glow2');
   if (!reduceMotion && glow1) {
@@ -954,7 +954,7 @@
     }, { passive: true });
   }
 
-  // â”€â”€ growing line + lit nodes through the flow diagram â”€â”€
+  // ── growing line + lit nodes through the flow diagram ──
   const flow = document.getElementById('flow');
   const flowFill = document.getElementById('flowFill');
   if (flow && flowFill) {
@@ -973,7 +973,7 @@
     updateFlow();
   }
 
-  // â”€â”€ analytics: CTA + section reach â”€â”€
+  // ── analytics: CTA + section reach ──
   document.addEventListener('click', (e) => {
     const a = e.target.closest && e.target.closest('a[href^="mailto:"]');
     if (!a) return;
